@@ -53,7 +53,11 @@
                                 </li>
                             @endif
                         @else
+                            @if (auth()->user()->isAdmin == 1)
+                            <a class="nav-link" href="/">Admin Dashboard</a>
+                            @else
                             <a class="nav-link" href="/appointments">My Appointments</a>
+                            @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}

@@ -23,6 +23,8 @@ Route::post('/',[DonorController::class,"store"])->middleware("auth");
 Route::get('/thanks',[DonorController::class,"thanks"])->name("thanks")->middleware("auth");
 Route::delete('/appointments/{id}',[DonorController::class,"destroy"])->middleware("auth");
 
+Route::get('/admin',[DonorController::class,"thanks"])->middleware("isAdmin");
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
