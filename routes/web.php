@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\DonerController;
+use App\Http\Controllers\DonorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +14,13 @@ use App\Http\Controllers\DonerController;
 |
 */
 
-Route::get('/',[DonerController::class,"index"]);
-Route::get('/book',[DonerController::class,"create"]);
-Route::get('/thanks',[DonerController::class,"store"]);
+Route::get('/',[DonorController::class,"index"]);
+Route::get('/book',[DonorController::class,"create"])->middleware("auth");
+Route::get('/appointments',[DonorController::class,"appointments"])->name("appointments")->middleware("auth");
+Route::post('/update/{id}',[DonorController::class,"update"])->name("update")->middleware("auth");
+Route::get('/edit/{id}',[DonorController::class,"show"])->middleware("auth");
+Route::get('/thanks',[DonorController::class,"thanks"])->name("thanks")->middleware("auth");
+Route::delete('/appointments/{id}',[DonorController::class,"destroy"])->middleware("auth");
 
 Auth::routes();
 

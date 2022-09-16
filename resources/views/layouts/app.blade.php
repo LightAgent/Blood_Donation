@@ -21,7 +21,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light ">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}" ><img src="images/logo.jpg" width="50" height="50" alt=""></a>
+                <a class="navbar-brand" href="{{ url('/') }}" ><img src={{ URL::asset("images/logo.jpg") }} width="50" height="50" alt=""></a>
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Blood Donors
                 </a>
@@ -53,7 +53,7 @@
                                 </li>
                             @endif
                         @else
-                            <a class="nav-link" href="">My Appointments</a>
+                            <a class="nav-link" href="/appointments">My Appointments</a>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}

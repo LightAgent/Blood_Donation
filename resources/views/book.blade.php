@@ -13,12 +13,13 @@
     <!-- Start Card Body -->
     <div class="card-body">
       <!-- Start Form -->
-      <form id="bookingForm" action="#" method="" >
+      <form id="bookingForm" action="/" method="POST" >
+        @csrf
         <div class="center-div"><h3>Donor's information</h3></div>
         <!-- Start Input Name -->
         <div class="form-group">
           <label for="finputName">Name</label>
-          <input type="text" class="form-control" id="inputFName" name="fname" placeholder="Donor's Full Name" required />
+          <input type="text" class="form-control" id="inputFName" name="name" placeholder="Donor's Full Name" required />
         </div>
         <!-- End Input Name -->
         
@@ -40,7 +41,7 @@
         <!-- Start Input ID -->
         <div class="form-group space">
           <label for="nationalid">National ID</label>
-          <input type="number" class="form-control" id="nationalid" name="nationalid" placeholder="XXXXXXXXXXXXXX" required />
+          <input type="number" class="form-control" id="nationalid" name="nationalid" placeholder="XXXXXXXXXXXXXX" min="0" required />
         </div>
         <!-- End Input ID -->
         
@@ -55,7 +56,7 @@
           <!-- End Input Date -->
 
         <!-- Start Submit Button -->
-        <div class="center-div"><button class="btn btn-primary btn-block " type="submit">Submit</button></div>
+        <div class="center-div"><input class="btn btn-primary btn-block " type="submit" value="Book Now!"></div>
         <!-- End Submit Button -->
       </form>
       <!-- End Form -->
