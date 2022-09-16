@@ -19,6 +19,7 @@ Route::get('/book',[DonorController::class,"create"])->middleware("auth");
 Route::get('/appointments',[DonorController::class,"appointments"])->name("appointments")->middleware("auth");
 Route::post('/update/{id}',[DonorController::class,"update"])->name("update")->middleware("auth");
 Route::get('/edit/{id}',[DonorController::class,"show"])->middleware("auth");
+Route::post('/',[DonorController::class,"store"])->middleware("auth");
 Route::get('/thanks',[DonorController::class,"thanks"])->name("thanks")->middleware("auth");
 Route::delete('/appointments/{id}',[DonorController::class,"destroy"])->middleware("auth");
 
