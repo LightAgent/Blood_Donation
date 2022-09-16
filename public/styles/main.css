@@ -4,6 +4,11 @@
     align-items: center;
     margin: 20px;
 }
+.center-div-no-margin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .space{
     margin-top: 10px;
     margin-bottom: 10px;

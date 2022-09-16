@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string("nationalid");
             $table->string("phone");
             $table->date("date");
+            $table->boolean("confirmed")->default(false);
         });
     }
 

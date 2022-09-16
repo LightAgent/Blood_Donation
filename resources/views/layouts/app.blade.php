@@ -38,25 +38,25 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto" id="na">
                         <!-- Authentication Links -->
-                        <a class="nav-link" href="/">Home</a>
-                        <a class="nav-link" href="/book">Book</a>
+                        <a class="nav-link {{ Route::is('index') ? 'active' : '' }}" href="/">Home</a>
+                        <a class="nav-link {{ Route::is('book') ? 'active' : '' }}" href="/book">Book</a>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link {{ Route::is('login') ? 'active' : '' }}" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link {{ Route::is('register') ? 'active' : '' }}" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
                             @if (auth()->user()->isAdmin == 1)
-                            <a class="nav-link" href="/">Admin Dashboard</a>
+                            <a class="nav-link {{ Route::is('admin.dashboard') ? 'active' : '' }}" href="/dashboard">Admin Dashboard</a>
                             @else
-                            <a class="nav-link" href="/appointments">My Appointments</a>
+                            <a class="nav-link {{ Route::is('appointments') ? 'active' : '' }}" href="/appointments">My Appointments</a>
                             @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

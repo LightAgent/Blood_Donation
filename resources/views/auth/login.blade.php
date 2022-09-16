@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('title',"Login")
-
+@section("head")
+    <link href="{{ asset('styles/main.css') }}" rel="stylesheet" type="text/css" >
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -52,7 +54,9 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="center-div-no-margin">
+                            <p style="color:red">{{session("error")}}</p>
+                        </div>
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
