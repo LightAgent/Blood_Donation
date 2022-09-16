@@ -15,7 +15,8 @@ use App\Http\Controllers\DonerController;
 */
 
 Route::get('/',[DonerController::class,"index"]);
-Route::get('/book',[DonerController::class,"create"])->middleware("auth");
+Route::get('/book',[DonerController::class,"create"]);
+Route::get('/thanks',[DonerController::class,"store"]);
 
 Auth::routes();
 

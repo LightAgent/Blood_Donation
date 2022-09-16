@@ -77,11 +77,12 @@ p {
 .container-fluid {
   padding: 0px; }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-family: montserrat; }
 
 strong {
-  font-family: montserrat; }
+  font-family: montserrat;
+ } */
 
 body {
   background-color: #f1f1f145 !important;

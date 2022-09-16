@@ -23,7 +23,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" ><img src="images/logo.jpg" width="50" height="50" alt=""></a>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Blood Doner
+                    Blood Donors
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -36,8 +36,10 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto ">
+                    <ul class="navbar-nav ms-auto" id="na">
                         <!-- Authentication Links -->
+                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/book">Book</a>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -51,6 +53,7 @@
                                 </li>
                             @endif
                         @else
+                            <a class="nav-link" href="">My Appointments</a>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}

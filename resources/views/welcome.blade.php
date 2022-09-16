@@ -27,9 +27,7 @@
                 <img class="d-block w-100" src="assets/images/slider/slide-02.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class=" bounceInDown">Donate Blood & Save a Life</h5>
-                    <p class=" bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, <br>
-                        aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis <br>
-                        sed sagittis at, sagittis quis neque. Praesent.</p>
+                    <p class=" bounceInLeft">We always need new donors. Let us take you through the steps to becoming a donor and the process of getting that first appointment booked.</p>
 
                     <div class=" vbh">
 
@@ -54,28 +52,28 @@
             <div class="bkjiu">
                 <img src="assets/images/gallery/g1.jpg" alt="">
                 <h4><b>1 - </b>Registration</h4>
-                <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis</p>
+                <p>Register for an account then book an appointment!</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 vd">
             <div class="bkjiu">
                 <img src="assets/images/gallery/g2.jpg" alt="">
                 <h4><b>2 - </b>Seeing</h4>
-                <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis</p>
+                <p>Make sure to arrive at the date you registered.</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 vd">
             <div class="bkjiu">
                 <img src="assets/images/gallery/g3.jpg" alt="">
                 <h4><b>3 - </b>Donation</h4>
-                <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis</p>
+                <p>The entire process takes about 1 hour from testing your blood to finishing up your free snack!</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 vd">
             <div class="bkjiu">
                 <img src="assets/images/gallery/g4.jpg" alt="">
-                <h4><b>4 - </b>Save Life</h4>
-                    <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis</p>
+                <h4><b>4 - </b>Save Lives</h4>
+                    <p>Your blood saves lives. Your blood donation is an amazing gift to people who need it in an emergency or for on-going medical treatment. We need nearly 5,000 people to give blood every day to meet the needs of hospitals and patients.</p>
 
                 </div> 
             </div>
@@ -138,11 +136,13 @@
         </div>
         <div class="row">
             <div class="col-md-6 text">
-                <h2>About Blood Doners</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some formhumour, or randomised words which don't look even slightly believable. If you are going to use a passage. industry's standard dummy has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p>Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <h2>About Blood Donors</h2>
+                <p style="font-size: 20px">
+                    Blood Donors is a charity dedicated to reducing worldwide inequities in blood safety and sufficiency. Since 2008, we have helped over 50 poorly resourced countries in Africa, Asia and Latin America better serve their communities.
+                    Our experience from years of working in countries around the world has shown us that supporting voluntary, non-remunerated donation is the most effective and cost-efficient intervention.
+                    Global Blood Fund has facilitated such efforts as establishing rural blood banks and supplying bloodmobiles to improve donor access and operational efficiency.
+                    We also have resourced collectors by providing items such as donation couches, portable beds and recognition gifts to enhance comfort and encourage donors to return.
+                </p>
             </div>
             <div class="col-md-6 image">
                 <img src="images/logo.jpg" height="400" alt="">

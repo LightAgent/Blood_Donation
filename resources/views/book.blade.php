@@ -14,28 +14,22 @@
     <div class="card-body">
       <!-- Start Form -->
       <form id="bookingForm" action="#" method="" >
-        <div class="center-div"><h3>Doner's information</h3></div>
+        <div class="center-div"><h3>Donor's information</h3></div>
         <!-- Start Input Name -->
         <div class="form-group">
           <label for="finputName">Name</label>
-          <input type="text" class="form-control" id="inputFName" name="fname" placeholder="Doner's First Name" required />
+          <input type="text" class="form-control" id="inputFName" name="fname" placeholder="Donor's Full Name" required />
         </div>
         <!-- End Input Name -->
         
         <!-- Start Input Email -->
         <div class="form-group">
           <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Doner's Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Donor's Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
           <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <!-- End Input Email -->
-        <!-- Start Input ID -->
-        <div class="form-group space">
-          <label for="nationalid">National ID</label>
-          <input type="text" class="form-control" id="nationalid" name="nationalid" placeholder="National ID" required />
-        </div>
-        <!-- End Input ID -->
-        
+
         <!-- Start Input Telephone -->
         <div class="form-group">
           <label for="inputPhone">Phone</label>
@@ -46,7 +40,7 @@
         <!-- Start Input ID -->
         <div class="form-group space">
           <label for="nationalid">National ID</label>
-          <input type="text" class="form-control" id="nationalid" name="nationalid" placeholder="National ID" required />
+          <input type="number" class="form-control" id="nationalid" name="nationalid" placeholder="XXXXXXXXXXXXXX" required />
         </div>
         <!-- End Input ID -->
         
@@ -86,4 +80,5 @@
     today = yyyy + '-' + mm + '-' + dd;
     document.getElementById('inputDate').setAttribute("min", today);
 </script>
+
 @endsection
