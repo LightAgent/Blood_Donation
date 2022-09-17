@@ -26,6 +26,7 @@ Route::delete('/appointments/{id}',[DonorController::class,"destroy"])->middlewa
 
 Route::get('/admin',[AdminController::class,"index"])->name("admin.home")->middleware("isAdmin");
 Route::get('/dashboard',[AdminController::class,"show"])->name("admin.dashboard")->middleware("isAdmin");
+Route::get('/allusers',[AdminController::class,"users"])->name("admin.users")->middleware("isAdmin");
 
 Auth::routes();
 

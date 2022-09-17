@@ -13,7 +13,7 @@
         <!-- Start Form -->
         <form id="bookingForm" action="/update/{{$donor->id}}" method="POST" >
           @csrf
-          <div class="center-div"><h3>Edit Donor's Appointment #id {{$donor->id}}</h3></div>
+          <div class="center-div"><h3>Edit Donor's Appointment</h3></div>
           <!-- Start Input Name -->
           <div class="form-group">
             <label for="finputName">Name</label>

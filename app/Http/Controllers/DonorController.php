@@ -56,6 +56,7 @@ class DonorController extends Controller
         $donor->userId = Auth::id();
         $donor->nationalid = request("nationalid");
         $donor->date = request("date");
+        $donor->confirmed = false;
         
         $donor->save();
 
