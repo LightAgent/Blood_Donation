@@ -10,18 +10,18 @@ class DonorController extends Controller
 {
     public function index()
     {
-        return view("welcome");
+        return view("user.welcome");
     }
     
     public function create()
     {
-        return view("book");
+        return view("user.book");
     }
     public function appointments()
     {
         $donor = Donor::where("userId",Auth::id())->get();
         // error_log($donor);
-        return view("appointments",['details'=>$donor]);
+        return view("user.appointments",['details'=>$donor]);
     }
     public function store()
     {
@@ -39,13 +39,13 @@ class DonorController extends Controller
     }
     public function thanks()
     {
-        return view("thanks");
+        return view("user.thanks");
     }
     public function show($id)
     {
         $donor = Donor::where(["id"=>$id,"userId"=>Auth::id()])->firstOrFail();
         // error_log($donor);
-        return view("show",['donor'=>$donor]);
+        return view("user.show",['donor'=>$donor]);
     }
     public function update($id)
     {
