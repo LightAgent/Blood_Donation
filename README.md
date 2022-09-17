@@ -1,5 +1,5 @@
 # Blood Donors
-Blood Donors is laravel project for managing blood donation charities.  
+Blood Donors is Laravel project for managing blood donation charities.  
 
 ## Features
 
@@ -10,7 +10,7 @@ Blood Donors is laravel project for managing blood donation charities.
 - View all appointments 
 - Edit appointments
 - Delete appointments
-- Confirma appointments **(Admin)**
+- Confirm appointments **(Admin)**
 - View all users **(Admin)**
 - View confirmed appointments **(Admin)**
 - View unconfirmed appointments **(Admin)**
