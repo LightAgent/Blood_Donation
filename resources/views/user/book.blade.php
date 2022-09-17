@@ -13,7 +13,7 @@
     <!-- Start Card Body -->
     <div class="card-body">
       <!-- Start Form -->
-      <form id="bookingForm" action="/" method="POST" >
+      <form id="bookingForm" action="/" method="POST" autocomplete="off">
         @csrf
         <div class="center-div"><h3>Donor's information</h3></div>
         <!-- Start Input Name -->

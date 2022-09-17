@@ -30,7 +30,7 @@
   
           <!-- Demo info -->
           <div class="row text-center mt-4">
-            <a href="/allusers"><button class="btn btn-primary">Check All</button></a>          </div>
+            <a href="/allappointments"><button class="btn btn-primary">Check All</button></a>          </div>
           <!-- END -->
         </div>
       </div>
@@ -55,23 +55,18 @@
   
           <!-- Demo info-->
           <div class="row text-center mt-4">
-            <a href="/allusers"><button class="btn btn-primary">Check All</button></a>        </div>
+            <a href="/confirmed"><button class="btn btn-primary">Check All</button></a>        </div>
           <!-- END -->
         </div>
       </div>
   
       <div class="col-xl-3 col-lg-6 mb-4">
         <div class="bg-white rounded-lg p-5 shadow">
-          <h4 class="font-weight-bold text-center mb-4">Unconfirmed Appointments</h2>
+          <h4 class="text-center mb-4">Unconfirmed Appointments</h2>
   
           <!-- Progress bar 3 -->
           <div class="progress mx-auto" data-value='76'>
-            <span class="progress-left">
-                          <span class="progress-bar border-success"></span>
-            </span>
-            <span class="progress-right">
-                          <span class="progress-bar border-success"></span>
-            </span>
+            
             <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
               <div class="h2 font-weight-bold">{{$unConfirmed}}</div>
             </div>
@@ -80,7 +75,7 @@
   
           <!-- Demo info -->
           <div class="row text-center mt-4">
-            <a href="/allusers"><button class="btn btn-primary">Check All</button></a>        </div>
+            <a href="/unconfirmed"><button class="btn btn-primary">Check All</button></a>        </div>
           <!-- END -->
         </div>
       </div>

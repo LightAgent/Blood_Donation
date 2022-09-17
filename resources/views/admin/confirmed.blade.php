@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
-@section('title',"All Users")
-
+@section('title',"Confirmed Appointments")
 @section("content")
 <table class="table">
     <thead>
@@ -9,7 +8,10 @@
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Email</th>
-        <th scope="col">Admin</th>
+        <th scope="col">Phone</th>
+        <th scope="col">National ID</th>
+        <th scope="col">Appointment Date</th>
+        <th scope="col">Last Update</th>
       </tr>
     </thead>
     <tbody>
@@ -18,15 +20,13 @@
             <th scope="row">{{$loop->index+1}}</th>
             <td>{{$user->name}}</td>
             <td>{{$user->email}}</td>
-            <td>
-                @php
-                echo $user->isAdmin ? "Yes":"No" 
-                @endphp
-            </td>
+            <td>{{$user->phone}}</td>
+            <td>{{$user->nationalid}}</td>
+            <td>{{$user->date}}</td>
+            <td>{{$user->updated_at}}</td>
         </tr>
         @endforeach
       
     </tbody>
 </table>
-
 @endsection
