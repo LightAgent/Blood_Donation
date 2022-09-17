@@ -8,22 +8,22 @@ use Illuminate\Support\Facades\Auth;
 
 class DonorController extends Controller
 {
-    public function index()
+    public function index() // show the home page
     {
         return view("user.welcome");
     }
     
-    public function create()
+    public function create() // book a new appointment
     {
         return view("user.book");
     }
-    public function appointments()
+    public function appointments() // view all appointments
     {
         $donor = Donor::where("userId",Auth::id())->get();
         // error_log($donor);
         return view("user.appointments",['details'=>$donor]);
     }
-    public function store()
+    public function store() // store user's data
     {
         $donor = new Donor();
         $donor->name = request("name");
@@ -37,17 +37,17 @@ class DonorController extends Controller
 
         return redirect("/thanks");
     }
-    public function thanks()
+    public function thanks() // view thanks page
     {
         return view("user.thanks");
     }
-    public function show($id)
+    public function show($id) // show donor appointment
     {
         $donor = Donor::where(["id"=>$id,"userId"=>Auth::id()])->firstOrFail();
         // error_log($donor);
         return view("user.show",['donor'=>$donor]);
     }
-    public function update($id)
+    public function update($id) //  update user's info
     {
         $donor = Donor::where(["id"=>$id,"userId"=>Auth::id()])->firstOrFail();
         $donor->name = request("name");
@@ -62,7 +62,7 @@ class DonorController extends Controller
 
         return redirect(route("appointments"));
     }
-    public function destroy($id)
+    public function destroy($id) // remove appointment
     {
         $donor = Donor::where(["id"=>$id,"userId"=>Auth::id()])->firstOrFail();
         $donor->delete();

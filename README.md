@@ -10,7 +10,7 @@ Blood Donors is laravel project for managing blood donotaion charities.
 - View all appointments 
 - Edit appointments
 - Delete appointments
-- Confirmation of appointments **(Admin)**
+- Confirma appointments **(Admin)**
 - View all users **(Admin)**
 - View confirmed appointments **(Admin)**
 - View unconfirmed appointments **(Admin)**
@@ -24,6 +24,8 @@ Blood Donors is laravel project for managing blood donotaion charities.
 
 ## How To Run
 
+
+- create **blooddonation** database in mysql
+- run migration **php artisan migrate**
 - php artisan serve
 - npm run dev
-### Make sure to create **blooddonation** database
