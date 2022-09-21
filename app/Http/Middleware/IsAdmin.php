@@ -20,6 +20,6 @@ class IsAdmin
         if( $isAdmin ==1){
             return $next($request);
         }
-        return response()->view("forbidden");
+        return response()->view("services.forbidden");
     }
 }
